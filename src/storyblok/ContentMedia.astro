@@ -1,0 +1,16 @@
+---
+import { storyblokEditable, renderRichText } from '@storyblok/astro'
+import { Media } from 'accessible-astro-components'
+const { blok } = Astro.props
+const content = renderRichText(blok.body)
+---
+<section class="my-64" {...storyblokEditable(blok)}>
+    <div class="grid grid-cols-1 gap-24 md:grid-cols-2"  >
+        {!blok.reverseImage ? <Media class="rounded-lg" src={blok.media.filename} alt={blok.media.alt}/> : ''}
+        <div class="space-content flex flex-col justify-center">
+            <h2>{blok.title}</h2>
+            <div class="text-2xl" set:html={content}/>
+        </div>
+        {blok.reverseImage ? <Media class="rounded-lg" src={blok.media.filename} alt={blok.media.alt}/> : ''}
+    </div>
+</section>

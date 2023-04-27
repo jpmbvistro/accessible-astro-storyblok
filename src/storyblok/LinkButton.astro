@@ -1,0 +1,16 @@
+---
+import { Icon } from 'astro-icon'
+import { storyblokEditable } from '@storyblok/astro'
+const { blok } = Astro.props
+console.log('LINKB', blok)
+// const { icon = 'mdi:rocket', title = 'Title' } = Astro.props
+---
+
+<a class={`button ${blok.iconName ? 'has-icon' : ''} ${blok.color}`} href={blok.link} {...storyblokEditable(blok)}>
+    <Icon name={blok.iconName} />
+    {blok.text}
+</a>
+
+<style lang="scss">
+  
+</style>

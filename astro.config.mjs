@@ -17,7 +17,15 @@ export default defineConfig({
       // Add your components here
       blogPost: 'storyblok/BlogPost',
       blogPostList: 'storyblok/BlogPostList',
-      page: 'storyblok/Page'
+      page: 'storyblok/Page',
+        hero: 'storyblok/Hero',
+        feature: 'storyblok/Feature',
+        content: 'storyblok/Content',
+        grid: 'storyblok/Grid',
+        contentMedia: 'storyblok/ContentMedia',
+        linkButton: 'storyblok/LinkButton',
+        backgroundImage: 'storyblok/BackgroundImage',
+        header2: 'storyblok/Header2'
     },
     apiOptions: {
       // Choose your Storyblok space region
