@@ -1,6 +1,6 @@
 # Accessible Astro Starter
 
-![social-preview-image](https://user-images.githubusercontent.com/3909046/219942674-9894853e-def8-4180-84b8-6b577dacfcaa.png)
+![social-preview-image](https://github.com/jpmbvistro/accessible-astro-storyblok/blob/6e35dc941b7b425228645f6d2b1c11e361310fbe/public/social-preview-image.png?raw=true)
 
 Forked from https://github.com/markteekman/accessible-astro-starter
 
